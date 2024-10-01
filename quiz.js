@@ -6,11 +6,11 @@ function checkAnswer() {
     //gets the value of the selected answer
     let userAnswer = document.querySelector('input[name="quiz"]:checked');
     
-    if (userAnswer.value === correctAnswer){
+    if (userAnswer === correctAnswer){        
         document.getElementById("feedback").textContent="Correct! Well done.";
-    }else{
+        } else {
         document.getElementById("feedback").textContent="That's incorrect. Try again!";
-    }
+        }
 }
 //add event listener to the button
 document.getElementById("submit-answer").addEventListener("click", checkAnswer);
