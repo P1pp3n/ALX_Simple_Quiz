@@ -6,7 +6,7 @@ function checkAnswer() {
     //gets the value of the selected answer
     let userAnswer = document.querySelector('input[name="quiz"]:checked');
     
-    if(userAnswer.value === correctAnswer){
+    if (userAnswer.value === correctAnswer){
         document.getElementById("feedback").textContent="Correct! Well done.";
     }else{
         document.getElementById("feedback").textContent="That's incorrect. Try again!";
